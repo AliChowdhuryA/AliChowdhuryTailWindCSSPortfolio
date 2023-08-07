@@ -16,6 +16,7 @@ import web6 from "../public/web6.png"
 import {useState} from "react";
 
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
@@ -50,12 +51,12 @@ export default function Home() {
           
           </div>
         </section>
-        <section>
-          <div>
-            <h3 className='text-3xl py-1'>
+        <section >
+          <div className='text-center bg-amber-300 dark:bg-slate-500 p-6 rounded-lg shadow-md'>
+            <h3 className='text-3xl py-1 font-bold '>
               Services I offer
             </h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Since the beginning, I've always wanted to highlight 
+            <p className='text-md py-2 leading-8 text-gray-800 '>Since the beginning, I've always wanted to highlight 
             <span className="text-teal-500"> this text</span> and not this text
             </p>
             <p className='text-md py-2 leading-8 text-gray-800'>My main concerns are 
