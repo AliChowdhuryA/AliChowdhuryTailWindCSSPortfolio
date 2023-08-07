@@ -37,11 +37,19 @@ export default function Home() {
               <li></li>
             </ul>
           </nav>
-          <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Ali Chowdhury</h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>Developer and designer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>Aspiring Software developer. Any and everyday</p>
-          </div>
+          <div className={`text-center py-10 px-6 rounded-lg shadow-md ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gradient-to-r from-teal-100 to-teal-300 text-gray-800'}`}>
+          <h2 className={`text-4xl font-semibold ${darkMode ? 'text-teal-400' : 'text-teal-600'} md:text-5xl`}>
+            Ali Chowdhury
+          </h2>
+          <h3 className={`text-xl py-4 ${darkMode ? 'text-gray-300' : 'md:text-2xl'}`}>
+          Future Wayne State University Graduate
+          </h3>
+          <p className={`text-md py-2 leading-7 ${darkMode ? 'text-gray-400' : 'text-gray-800'} md:text-lg max-w-xl mx-auto`}>
+          Using my experience in both the workforce and in my degree, I'm currently looking for an internship/career to be able to prove my value and worth as it pertains to your company.
+          </p>
+        </div>
+
+
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillTwitterCircle/>
             <AiFillLinkedin/>
@@ -54,13 +62,14 @@ export default function Home() {
         <section >
           <div className='text-center bg-amber-300 dark:bg-slate-500 p-6 rounded-lg shadow-md'>
             <h3 className='text-5xl py-1 font-bold '>
-              Services I offer
+              About me
             </h3>
-            <p className='text-md py-2 leading-8 text-gray-800 text-2xl'>Since the beginning, I've always wanted to highlight 
-            <span className="text-teal-400"> this text</span> and not this text
+            <p className='text-md py-2 leading-8 text-gray-800 text-2xl'>I am a Wayne State student in my final year of computer science. I have come to know various programming languages and methods to use them.
+            I am proficient in 
+            <span className="text-teal-400"> UX design, C++, Python, </span> and <span className="text-teal-400">Docker</span>. I look forward to expanding my skillset with you.
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>My main concerns are 
-            <span className="text-teal-500"> this text</span> and not this text
+            <p className='text-md py-2 leading-8 text-gray-800'>My main priority is to secure an environment where I can continually
+            <span className="text-teal-500"> learn and improve</span>, both in the work environment and out.
             </p>
           </div>
           <div className='lg:flex justify-center gap-10'>
