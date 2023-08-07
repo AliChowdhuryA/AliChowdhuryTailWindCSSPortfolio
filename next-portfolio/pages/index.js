@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import{AiFillTwitterCircle, AiFillLinkedin} from 'react-icons/ai';
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import deved from "../public/AliCThumb.png";
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
@@ -53,27 +53,29 @@ export default function Home() {
         </section>
         <section >
           <div className='text-center bg-amber-300 dark:bg-slate-500 p-6 rounded-lg shadow-md'>
-            <h3 className='text-3xl py-1 font-bold '>
+            <h3 className='text-5xl py-1 font-bold '>
               Services I offer
             </h3>
-            <p className='text-md py-2 leading-8 text-gray-800 '>Since the beginning, I've always wanted to highlight 
-            <span className="text-teal-500"> this text</span> and not this text
+            <p className='text-md py-2 leading-8 text-gray-800 text-2xl'>Since the beginning, I've always wanted to highlight 
+            <span className="text-teal-400"> this text</span> and not this text
             </p>
             <p className='text-md py-2 leading-8 text-gray-800'>My main concerns are 
             <span className="text-teal-500"> this text</span> and not this text
             </p>
           </div>
-          <div className='lg:flex gap-10'>
-          <div className='text-center shadow-md p-6 rounded-xl my-10 bg-teal-500 dark:bg-gray-800 dark:shadow-lg'>
+          <div className='lg:flex justify-center gap-10'>
+            {/*First card*/}
+          <div className='text-center shadow-lg p-6 rounded-xl my-10 bg-teal-500 dark:bg-gray-800 dark:shadow-lg'>
           <Image src={design} width={100} height={100} />
           <h3 className='text-lg font-medium pt-6 pb-2 text-white'>Beautiful Designs</h3>
           <p className='text-white'>Creating elegant designs for your needs</p>
-          <h4 className='py-4 dark:text-teal-600 text-white'>Design tools I used</h4>
-          <p className='text-white py-1'>Photoshop</p>
-          <p className='text-white py-1'>Docker</p>
-          <p className='text-white py-1'>Python</p>
+          <h4 className='py-4 dark:text-teal-600 text-beige-500 font-bold'>Design tools I used</h4>
+          <p className='text-white font-bold py-1'>Photoshop</p>
+          <p className='text-white font-bold py-1'>Docker</p>
+          <p className='text-white font-bold py-1'>Python</p>
           </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-beige-100 dark:bg-beige-100 '>
+          {/*Second card*/}
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-red-300 dark:bg-beige-100 '>
               <Image src={consulting} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p>Creating elegant designs for ur needs</p>
@@ -82,7 +84,8 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Docker</p>
               <p className='text-gray-800 py-1'>Python</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-beige-100'>
+            {/*Third card*/}
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-beige-100 dark:shadow-lg'>
               <Image src={code} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p>Creating elegant designs for ur needs</p>
@@ -94,7 +97,7 @@ export default function Home() {
           </div>
         </section>
         <section className='bg-beige-100 dark:bg-gray-500'>
-          <div>
+          <div className='text-center'>
             <h3 className='text-3xl py-1'>
               portfolio
             </h3>
