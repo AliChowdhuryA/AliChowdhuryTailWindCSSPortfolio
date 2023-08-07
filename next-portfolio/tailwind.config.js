@@ -11,11 +11,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
+      fontFamily: {
         burtons: "burtons",
       },
-
+      colors: {
+        beige: {
+          100: "#F5F5DC",
+          // Add other shades of beige as needed
+        },
+      },
     },
   },
   plugins: [],
-}
+};
