@@ -6,7 +6,11 @@ import Image from "next/image";
 import deved from "../public/AliCThumb.png";
 import design from '../public/design.png'
 import code from '../public/code.png'
-import consulting from '../public/consulting.png'
+import consulting from '../public/WayneGain.png'
+import glove from '../public/boxing_gloves.png'
+import PunchIn from '../public/PunchIn.png'
+import DataTreeLogo from '../public/DataTreeLogo.png'
+import DataTree from '../public/DataTree.png'
 import web1 from "../public/web1.png"
 import web2 from "../public/web2.png"
 import web3 from "../public/web3.png"
@@ -64,9 +68,10 @@ export default function Home() {
             <h3 className='text-5xl py-1 font-bold '>
               About me
             </h3>
-            <p className='text-md py-2 leading-8 text-gray-800 text-2xl'>I am a Wayne State student in my final year of computer science. I have come to know various programming languages and methods to use them.
+            <p className='text-md py-2 leading-8 text-gray-800 text-2xl'>I am a Wayne State student in my final year of computer science.
+            I have both a background in both programming and in IT to help suit your needs. I have come to know various programming languages and methods to use them.
             I am proficient in 
-            <span className="text-teal-400"> UX design, C++, Python, </span> and <span className="text-teal-400">Docker</span>. I look forward to expanding my skillset with you.
+            <span className="text-teal-400"> UX design, C++, Python, </span> and <span className="text-teal-400">Docker</span> and I look forward to expanding my skillset with you.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800'>My main priority is to secure an environment where I can continually
             <span className="text-teal-500"> learn and improve</span>, both in the work environment and out.
@@ -74,55 +79,87 @@ export default function Home() {
           </div>
           <div className='lg:flex justify-center gap-10'>
             {/*First card*/}
-          <div className='text-center shadow-lg p-6 rounded-xl my-10 bg-teal-500 dark:bg-gray-800 dark:shadow-lg'>
+          <div className='text-center shadow-lg p-6 rounded-xl my-10 bg-teal-500 dark:bg-gray-800 dark:shadow-lg flex flex-col items-center'>
           <Image src={design} width={100} height={100} />
-          <h3 className='text-lg font-medium pt-6 pb-2 text-white'>Beautiful Designs</h3>
-          <p className='text-white'>Creating elegant designs for your needs</p>
-          <h4 className='py-4 dark:text-teal-600 text-beige-500 font-bold'>Design tools I used</h4>
+          <h3 className='text-lg font-medium pt-6 pb-2 text-white'>Tools Under My Belt</h3>
+          <h4 className='py-4 dark:text-teal-600 '>Programs/Languages I have Proficiency In</h4>
           <p className='text-white font-bold py-1'>Photoshop</p>
-          <p className='text-white font-bold py-1'>Docker</p>
+          <p className='text-white font-bold py-1'>DaVinci Resolve/Premiere</p>
           <p className='text-white font-bold py-1'>Python</p>
+          <p className='text-white font-bold py-1'>Docker</p>
           </div>
           {/*Second card*/}
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-red-300 dark:bg-beige-100 '>
-              <Image src={consulting} width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p>Creating elegant designs for ur needs</p>
-              <h4 className='py-4 text-teal-600'>Design tools I used</h4>
-              <p className='text-gray-800 py-1 '>Photoship</p>
-              <p className='text-gray-800 py-1'>Docker</p>
-              <p className='text-gray-800 py-1'>Python</p>
-            </div>
+          <div className='text-center shadow-lg p-6 rounded-xl my-10 bg-teal-500 dark:bg-gray-800 dark:shadow-lg flex flex-col items-center'>
+          <Image src={consulting} width={100} height={100}/>
+          <h3 className='text-lg font-medium pt-6 pb-2 text-white'>Project: Microservice-based Fitness Tracker</h3>
+          <h4 className='py-4 dark:text-teal-600 '>Tools used:</h4>
+          <p className='text-white font-bold py-1'>HTML/CSS/JavaScript</p>
+          <p className='text-white font-bold py-1'>Flask RESTful APIs</p>
+          <p className='text-white font-bold py-1'>Docker</p>
+          <p className='text-white font-bold py-1'>Python</p>
+          <a href='https://github.com/AliChowdhuryA/WayneGain' target='_blank' rel='noopener noreferrer' className='mt-4 inline-block bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300 ease-in-out'>
+            View on GitHub
+          </a>
+          </div>
+
             {/*Third card*/}
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-beige-100 dark:shadow-lg'>
-              <Image src={code} width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p>Creating elegant designs for ur needs</p>
-              <h4 className='py-4 text-teal-600'>Design tools I used</h4>
-              <p className='text-gray-800 py-1 '>Photoship</p>
-              <p className='text-gray-800 py-1'>Docker</p>
-              <p className='text-gray-800 py-1'>Python</p>
-            </div>
+            <div className='text-center shadow-lg p-6 rounded-xl my-10 bg-teal-500 dark:bg-gray-800 dark:shadow-lg flex flex-col items-center'>
+          <Image src={glove} width={100} height={100}/>
+          <h3 className='text-lg font-medium pt-6 pb-2 text-white'>Project: Boxing Game</h3>
+          <h4 className='py-4 dark:text-teal-600 '>Tools used:</h4>
+          <p className='text-white font-bold py-1'>Python/PyGame</p>
+          <p className='text-white font-bold py-1'>Repl</p>
+
+          <a href='https://replit.com/@AliChowdhury/PunchOut' target='_blank' rel='noopener noreferrer' className='mt-4 inline-block bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300 ease-in-out'>
+            View on Repl
+          </a>
+          </div>
+                      {/*Fourth card*/}
+                      <div className='text-center shadow-lg p-6 rounded-xl my-10 bg-teal-500 dark:bg-gray-800 dark:shadow-lg flex flex-col items-center'>
+          <Image src={DataTreeLogo} width={100} height={100}/>
+          <h3 className='text-lg font-medium pt-6 pb-2 text-white'>Project: DataTree</h3>
+          <h4 className='py-4 dark:text-teal-600 '>Tools used:</h4>
+          <p className='text-white font-bold py-1'>Python</p>
+          <p className='text-white font-bold py-1'>Custom/Tkinter</p>
+          <p className='text-white font-bold py-1'>Bootstrap</p>
+
+          <a href='https://github.com/CSC4110-Group1/CSC4110-Project-2/' target='_blank' rel='noopener noreferrer' className='mt-4 inline-block bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300 ease-in-out'>
+            View on Repl
+          </a>
+          </div>
           </div>
         </section>
         <section className='bg-beige-100 dark:bg-gray-500'>
-          <div className='text-center'>
-            <h3 className='text-3xl py-1'>
-              portfolio
-            </h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Since the beginning, I've always wanted to highlight 
-            <span className="text-teal-500"> this text</span> and not this text
-            </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>My main concerns are 
-            <span className="text-teal-500"> this text</span> and not this text
-            </p>
-          </div>
+
+          {/*Portfolio portion */}
+        <div className={`bg-teal-100 dark:bg-gray-700 p-6 rounded-lg shadow-md text-center ${darkMode ? 'dark:text-white' : 'dark:text-gray-800'}`}>
+  <h3 className={`text-3xl font-semibold mb-2 ${darkMode ? 'text-gray-300' : 'text-gray-800'}`}>
+    Portfolio
+  </h3>
+
+  <p className={`text-md py-2 leading-7 max-w-md mx-auto ${darkMode ? 'text-gray-300' : 'text-gray-800'}`}>
+    This portfolio was created using {" "}
+    <span className="text-teal-500 font-bold">TailWindCSS</span> and <span className="text-teal-500 font-bold">React</span>.
+  </p>
+  <a
+    href='https://github.com/AliChowdhuryA/FCCReactPortfolio'
+    target='_blank'
+    rel='noopener noreferrer'
+    className={`mt-4 inline-block bg-teal-500 dark:bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-teal-600 dark:hover:bg-gray-700 transition duration-300 ease-in-out ${darkMode ? 'dark:text-gray-300' : 'dark:text-white'}`}
+  >
+    Check out the repository
+  </a>
+</div>
+
+
+
+
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-            <Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"/>
+            <Image src={PunchIn} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"/>
             </div>
             <div className='basis-1/3 flex-1'>
-            <Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"/>
+            <Image src={DataTree} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"/>
             </div>
             <div className='basis-1/3 flex-1'>
             <Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"/>
