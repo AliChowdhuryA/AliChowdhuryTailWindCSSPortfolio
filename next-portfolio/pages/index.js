@@ -78,7 +78,7 @@ export default function Home() {
                 darkMode ? 'text-gray-400' : 'text-gray-800'
               } md:text-lg max-w-xl mx-auto`}
             >
-              Using my experience in both the workforce and in my degree, I'm
+              Using my experience in both the workforce and in my degree, I&apos;m
               currently looking for an internship/career to be able to prove my
               value and worth as it pertains to your company.
             </p>
