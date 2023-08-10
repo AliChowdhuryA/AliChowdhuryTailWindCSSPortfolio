@@ -86,13 +86,15 @@ export default function Home() {
 
 
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillTwitterCircle/>
-            <AiFillLinkedin/>
-          </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src ={deved} layout='fill' objectFit='cover'/>
-          
-          </div>
+
+  <a href="https://www.linkedin.com/in/ali-chowdhury-786125175/" target="_blank" rel="noopener noreferrer">
+    <AiFillLinkedin/>
+  </a>
+</div>
+<div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+  <Image src ={deved} layout='fill' objectFit='cover'/>
+</div>
+
         </section>
         <section >
           <div className='text-center bg-amber-300 dark:bg-slate-500 p-6 rounded-lg shadow-md'>
